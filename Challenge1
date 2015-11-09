@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Challenge1 {
+	
+	public static void main(String[] args){	
+	
+		// Variable and object declarations | Age, name, username
+		Scanner console = new Scanner(System.in);
+		
+		String username = null;
+		String name = null;
+		byte age;
+		
+		// Asks user for his/her name
+		
+		System.out.println("Hey m8! What's your name?");
+		name = console.nextLine();
+		
+		// Asks user for his/her age
+		System.out.println("Hey m8! What's your age?");
+		age = console.nextByte();
+		
+		// Asks user for his/her account username
+		System.out.println("Hey m8! What's your username?");
+		username = console.nextLine();
+	}		
+}
