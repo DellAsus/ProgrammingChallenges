@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class Challenge2 {
+	
+	public static void main(String[] args){
+
+		// Declarations of variables and objects | speed, time1, time2, velocity1, velocity2, velocityDifference, acceleration
+		Scanner console = new Scanner(System.in);
+		
+		int time1 = 0;
+		int time2 = 0;
+		int velocity1 = 0;
+		int velocity2 = 0;
+		
+		int distance = 0;
+		int time = 0;
+		
+		int speed = distance / time;
+		
+		int velocityDifference = speed / time1;
+		int acceleration = (velocity1 - velocity2) / (time1 - time2);
+		
+		String answer;		
+		
+		System.out.println("What would you like to calculate? Velocity or acceleration?:\t");
+		answer = console.next().toLowerCase();
+		
+		if( answer.equals("speed")){
+			System.out.println("What is the initial time? \t");
+			time1 = console.nextInt();
+						
+			System.out.println("What is the final time? \t");
+			time2 = console.nextInt();
+			
+		}
+		else if(answer.equals("acceleration")){
+			
+		}
+		
+		console.close();
+	}
+}
