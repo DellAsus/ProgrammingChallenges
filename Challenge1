@@ -26,4 +26,4 @@ public class Challenge1 {
 		
 		console.close();
 	}		
-} 
+}
