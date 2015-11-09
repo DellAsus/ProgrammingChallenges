@@ -8,19 +8,22 @@ public class Challenge1 {
 		
 		String username = null;
 		String name = null;
-		byte age;
+		byte age = 0;
 		
-		// Asks user for his/her name
-		
-		System.out.println("Hey m8! What's your name?");
-		name = console.nextLine();
+		// Asks user for his/her name		
+		System.out.print("Hey m8! What's your name? \t");
+		name = console.next();
 		
 		// Asks user for his/her age
-		System.out.println("Hey m8! What's your age?");
+		System.out.print("Hey m8! What's your age? \t");
 		age = console.nextByte();
 		
 		// Asks user for his/her account username
-		System.out.println("Hey m8! What's your username?");
-		username = console.nextLine();
+		System.out.print("Hey m8! What's your username? \t");
+		username = console.next();
+		
+		System.out.println("Hey " + name +  ", your " + age +  " years old, and your account username is " + username);
+		
+		console.close();
 	}		
 } 
